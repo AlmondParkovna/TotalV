@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тотал Втор</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/f27517934e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="gradient">
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Логотип" class="logo">
+                <h1 class="company-name">Тотал Втор</h1>
+            </div>
+            <div class="contacts">
+                <a href="tel:+380932158161">+380 (93) 215 81 61</a>
+                <p>total.vtor.manager@gmail.com</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/" class="mainPage">Главная</a></li>
+                <li><a href="/services">Услуги</a></li>
+                <li><a href="/aboutus">О нас</a></li>
+                <li><a href="/contacts">Контакты и адреса</a></li>
+                <li><a href="/price">Цены</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <section class="content">
+            <h2>Покупаем лом черного и цветного металла у предприятий и частных лиц в Одессе и одесской области</h2>
+            <p>
+                Наша компания занимается закупкой чёрного и цветного металлолома у юридических и частных лиц. Мы предлагаем выгодные условия и оперативное обслуживание, гарантируя справедливую и прозрачную оценку стоимости вашего металла.
+            </p>
+            <p>
+                Мы предоставляем профессиональные услуги по вывозу и покупке металла. Наши специалисты оперативно выезжают на указанное место — будь то квартира, дом или иная локация. На месте мы проводим взвешивание, оцениваем стоимость и осуществляем расчёт с клиентом. Также мы берем на себя всю логистику, включая погрузку и транспортировку металла.
+            </p>
+            <h1>Юридическим лицам</h1>
+            <p>Для предприятий выполняем демонтаж, любых металлоконструкций, различного оборудования и порезку емкостей.
+
+            Так же закупаем металлические отходы от различного производства:</p>
+            <ul>
+                <li>Металлическую стружку</li>
+                <li>Высечку листового металла</li>
+                <li>Металлические упаковочные ленты</li>
+                <li>Отходы мягкой вязальной проволоки</li>
+                <li>Отработанные троса</li>
+            </ul>
+            <p>Оперативно производим оформление купли-продажи металлолома юридическим лицам.
+
+Доставка черного лома (цветных металлов) производиться нашим автотранспортом на специализированную площадку, где металлолом возводиться на поверенных весах и выгружается спец. техникой (фуксы, магниты)</p>
+            <div class="table-container">
+                <h2>Розничные цены на лом в Одессе</h2>
+                <p style="color: red;">Оптовые цены уточняйте по телефону</p>
+                <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Тип лома</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(item => { %>
+                            <tr>
+                                <td><%= item.name %></td>
+                                <td><%= item.price %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <h2 class="title">Почему вы должны сдать лом или заказать контейнер у нас</h2>
+                <div class="icons-grid">
+                    <div class="icon-item">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>Заслужили доверие клиентов</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <p>Расчёт и взвешивание на месте</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Есть свой автопарк</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-brands fa-codepen"></i>
+                        <p>Контейнера разных размеров</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p>Отличная цена</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <p>Своевременный расчет</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer style="background-color: #484848; padding: 20px; display: flex; align-items: center; justify-content: space-between; font-family: Arial, sans-serif;">
+        
+        <div style="display: flex; align-items: center;">
+          <img src="img/logo.png" alt="Логотип" style="height: 50px; margin-right: 10px;">
+          <span>&copy; 2025 Все права защищены</span>
+        </div>
+      
+        
+        <div style="text-align: center;">
+          <a href="tel:+380932158161" style="margin: 0; font-weight: bold; color: lightgray; text-decoration: none;">+380 (93) 215 81 61</a>
+        </div>
+      
+        
+        <div>
+          <a href="https://www.tiktok.com/@metallolom_od?_t=ZM-8sqTkTGbXoj&_r=1" style="margin: 0 10px; color: #333; font-size: 24px;" class="fab fa-tiktok" aria-label="Tiktok"></a>
+          <a href="https://t.me/+-V1Dq0yUMps1ZDgy" style="margin: 0 10px; color: #333; font-size: 24px;" class="fa fa-telegram" aria-label="Telegram"></a>
+          <a href="mailto:total.vtor.manager@gmail.com" style="margin: 0 10px; color: #333; font-size: 24px;" class="fa fa-envelope" aria-label="Email"></a>
+        </div>
+    </footer>
+</body>
+  
+</html>
