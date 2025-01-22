@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Smooch+Sans:wght@100..900&display=swap');
+
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; 
@@ -49,6 +52,24 @@
     .icon-item p {
         font-size: 14px;
     }
+
+    .logo-container {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    header .contacts {
+        margin-top: 20px;
+    }
+
+    header .contacts a {
+        display: block;
+        text-align: center;
+    }
 }
 
 
@@ -87,19 +108,23 @@ header {
 }
 
 .company-name {
+    font-family: "Russo One", serif;
     font-size: 24px;
     font-weight: bold;
     margin: 0;
     color: white;
-    text-shadow: 2px 2px 5px orange;
+    text-shadow: 2px 2px 1px rgb(252, 178, 110);
 }
 header .contacts {
     font-size: 0.9rem;
 }
 
 header .contacts a {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Smooch Sans", serif;
     color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .content {
@@ -154,3 +179,4 @@ nav ul li a:hover {
 nav ul li a.mainPage {
     border: 2px solid white;
 }
+

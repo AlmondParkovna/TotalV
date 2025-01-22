@@ -9,7 +9,10 @@ let database = new MongoClient(`mongodb+srv://admin:${process.env.MONGODB_TOKEN}
 database.connect()
 const _db = database.db('main')
 const collection = _db.collection('materials')
+const optCollection = _db.collection('opt_materials')
+
 let data = []
+let OptData = []
 
 app.use(express.static(path.join(__dirname, '/public')))
 app.set('view engine', 'ejs')
@@ -17,9 +20,11 @@ app.set('views', path.join(__dirname, 'views'))
 
 async function updateData() {
   data = await collection.find({}).toArray()
+  OptData = await optCollection.find({}).toArray()
 }
 
 updateData()
+
 
 app.get('/', async (req, res) => {
   res.render('main', { data })
@@ -45,6 +50,10 @@ app.get('/price', (req, res) => {
 app.post('/updatedata', (req, res) => {
   updateData()
   res.status(200)
+})
+
+app.get('/getTableData', (req, res) => {
+  res.json(OptData)
 })
 
 app.listen(port, () => {

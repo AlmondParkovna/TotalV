@@ -78,6 +78,12 @@ select option {
     text-align: left;
 }
 
+.locations #opt {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, rgb(190, 3, 35), rgb(240, 49, 1), red);
+    border-image-slice: 1;
+}
+
 .location-title {
     font-size: 18px;
     font-weight: bold;
