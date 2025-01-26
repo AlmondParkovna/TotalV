@@ -29,6 +29,9 @@
 
 
 @media (max-width: 480px) {
+    nav {
+        margin-right: 15px;
+    }
     nav ul li a {
         font-size: 16px; 
         padding: 12px 20px;
@@ -91,7 +94,7 @@ header {
 
 .gradient {
     max-width: 100%;
-    background: linear-gradient(to right bottom, green, orange, #ff4c25, red);
+    background-image: url('../img/background.jpg');
 }
 
 
