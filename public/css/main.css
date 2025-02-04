@@ -200,3 +200,6 @@ nav ul li a.mainPage {
     border: 2px solid black;
 }
 
+footer .footer-logo-container span {
+    color: white;
+}
