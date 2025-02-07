@@ -136,6 +136,12 @@
         position: relative; /* Поднимаем контент над псевдоэлементом */
         z-index: 1;
     }
+
+    footer .footer-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+    }
 }
 
 
@@ -269,4 +275,10 @@ nav ul li a.mainPage {
 
 footer .footer-logo-container span {
     color: white;
+}
+
+footer .footer-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
 }
