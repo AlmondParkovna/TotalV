@@ -56,6 +56,10 @@ app.get('/getTableData', (req, res) => {
   res.json(OptData)
 })
 
+app.get('/telegram', (req, res) => {
+  res.render('telegram')
+})
+
 app.listen(port, () => {
   console.log(port)
 })
