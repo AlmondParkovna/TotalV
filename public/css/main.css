@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Smooch+Sans:wght@100..900&display=swap');
 
+html, body {
+    overflow: hidden;
+}
 
 @media (min-width: 1024px) {
     .gradient {
