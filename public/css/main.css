@@ -4,6 +4,8 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
 @media (min-width: 1024px) {
     .gradient {
         background-size: cover;
@@ -226,7 +228,7 @@ header .contacts a {
     padding: 20px;
     flex-grow: 1;
 }
-.content h2 {
+.content h1 {
     /* color: #f05a28; */
     color: red;
     font-size: 1.5rem;

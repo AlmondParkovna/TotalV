@@ -15,10 +15,7 @@ header {
     padding: 20px;
     flex-grow: 1;
 }
-.content h2 {
-    color: #f05a28;
-    font-size: 1.5rem;
-}
+
 .content p {
     line-height: 1.6;
 }
@@ -50,6 +47,13 @@ header {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+}
+
+.icon-item:hover {
+    border: 1px solid #f05a28;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .icon-item i {
