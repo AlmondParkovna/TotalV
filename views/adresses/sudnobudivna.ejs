@@ -46,31 +46,31 @@
                     <tbody>
                         <tr>
                             <td>Понеділок</td>
-                            <td>08:00-19:00</td>
+                            <td><%= workingDay %></td>
                         </tr>
                         <tr>
                             <td>Вівторок</td>
-                            <td>08:00-19:00</td>
+                            <td><%= workingDay %></td>
                         </tr>
                         <tr>
                             <td>Середа</td>
-                            <td>08:00-19:00</td>
+                            <td><%= workingDay %></td>
                         </tr>
                         <tr>
                             <td>Четвер</td>
-                            <td>08:00-19:00</td>
+                            <td><%= workingDay %></td>
                         </tr>
                         <tr>
                             <td>П'ятниця</td>
-                            <td>08:00-19:00</td>
+                            <td><%= workingDay %></td>
                         </tr>
                         <tr>
                             <td>Субота</td>
-                            <td>08:00-19:00</td>
+                            <td><%= workingDay %></td>
                         </tr>
                         <tr>
                             <td>Неділя</td>
-                            <td>08:00-17:00</td>
+                            <td><%= dayOff %></td>
                         </tr>
                     </tbody>
                 </table>
@@ -78,10 +78,9 @@
 
             <h2>Фото приймального пункту</h2>
             <div class="image-gallery">
-                <img src="/img/adresses/sudnobudivna/2.JPG" alt="Фото 2">
-                <img src="/img/adresses/sudnobudivna/1.JPG" alt="Фото 1">
-                <img src="/img/adresses/sudnobudivna/3.JPG" alt="Фото 3">
-                <img src="/img/adresses/sudnobudivna/4.JPG" alt="Фото 4">
+                <% files.forEach(file => { %>
+                    <img src="/img/adresses/<%= page %>/<%= file %>">
+                <% }); %>
             </div>
 
             <h2>Наша адреса на карті</h2>
