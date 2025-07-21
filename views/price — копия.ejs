@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Тотал Втор</title>
+    <script src="https://kit.fontawesome.com/f27517934e.js" crossorigin="anonymous"></script>
+    <script>
+        function displayDate() {
+            const today = new Date()
+            const day = String(today.getDate()).padStart(2, '0')
+            const month = String(today.getMonth() + 1).padStart(2, '0')
+            const year = today.getFullYear()
+
+            const dateString = `${day}.${month}.${year}`
+            document.getElementById("dateParagraph").innerHTML = "сегодня: " + dateString
+        }
+    </script>
+</head>
+<body onload="displayDate()">
+    <div class="gradient">
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Логотип" class="logo">
+                <div class="company-name">Тотал Втор</div>
+            </div>
+            <div class="contacts">
+                <a href="tel:+380932158161">+380 (93) 215 81 61</a>
+                <a href="mailto:manager@totalvtor.od.ua">manager@totalvtor.od.ua</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/services">Услуги</a></li>
+                <li><a href="/aboutus">О нас</a></li>
+                <li><a href="/contacts">Контакты и адреса</a></li>
+                <li><a href="/price" class="mainPage">Цены</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <section class="content">
+            <div class="table-container">
+                <h2>Розничные цены на лом в Одессе</h2>
+                <p style="color: red;">Оптовые цены уточняйте по телефону</p>
+                <p>Актуальность цен на <span id="dateParagraph"></span></p>
+                <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Тип лома</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Чёрный металл</td>
+                            <td>4,50-5,80 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Алюминий</td>
+                            <td>38-40 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Алюминий элект.</td>
+                            <td>50-60 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Медь</td>
+                            <td>280-300 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Латунь</td>
+                            <td>170-190 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Рад мед-лат (авто)</td>
+                            <td>155-175 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Нержавейка</td>
+                            <td>20-25 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Акк. авто</td>
+                            <td>18 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Акк. гель</td>
+                            <td>10 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Свинец</td>
+                            <td>30 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Цинк</td>
+                            <td>25 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Банка</td>
+                            <td>20 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Макулатура</td>
+                            <td>3,50-5,00 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Пэт бутылка</td>
+                            <td>5 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Полиэтилен</td>
+                            <td>10 грн/кг</td>
+                        </tr>
+                        <tr>
+                            <td>Стеклотара</td>
+                            <td>0,5 коп/шт — 1 грн/шт</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <footer style="background-color: #484848; padding: 20px; display: flex; align-items: center; justify-content: space-between; font-family: Arial, sans-serif;">
+        
+        <div style="display: flex; align-items: center;" class="footer-logo-container">
+          <img src="img/logo.png" alt="Логотип" style="height: 50px; margin-right: 10px;">
+          <span style="font-family: 'Russo One', serif; white-space: nowrap;">Тотал Втор</span>
+        </div>
+      
+        
+        
+      
+        
+        <div class="footer-icons">
+          <a href="https://www.tiktok.com/@metallolom_od?_t=ZM-8sqTkTGbXoj&_r=1" class="fab fa-tiktok" aria-label="Tiktok"></a>
+          <a href="https://t.me/+-V1Dq0yUMps1ZDgy" class="fa fa-telegram" aria-label="Telegram"></a>
+          <a href="mailto:manager@totalvtor.od.ua" class="fa fa-envelope" aria-label="Email"></a>
+          <a href="tel:+380932158161" class="fas fa-square-phone" aria-label="Phone"></a>
+        </div>
+    </footer>
+</body>
+</html>

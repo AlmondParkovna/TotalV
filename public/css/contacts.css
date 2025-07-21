@@ -1,0 +1,101 @@
+#map { 
+    position: relative;
+    left: 20%;
+    top: 5px;
+    width: calc(60%); 
+    height: 450px; 
+    border: 2px solid rgb(253, 60, 2); 
+    box-shadow: 0 4px 8px rgb(253, 60, 2);
+    border-radius: 8px;
+}
+
+section.content {
+    max-width: 100%; 
+    margin: auto; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #e0e0e0;
+}
+
+select:focus {
+    border-color: #f05a28;
+    box-shadow: 0 0 8px #f05a28;
+}
+
+select option {
+    padding: 10px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.location {
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+}
+
+
+.location-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.location-address {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.location-link a {
+    font-size: 14px;
+    color: #f05a28;
+    text-decoration: none;
+}
+
+.location-link a:hover {
+    text-decoration: underline;
+}

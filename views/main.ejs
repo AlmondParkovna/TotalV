@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="V5al0rr03edzfCnqgbke9Jg9kOd-G2BmuX0VYcmJHnE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Прийом металобрухту по всій Одесі на приймальних пунктах. Вивіз металу, вигідні ціни та швидка оплата. Здайте метал дорого і без зайвих клопотів!">
+    <title>Тотал Втор | Металобрухт, вторсировина Одеса. Прийом та вивіз.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/f27517934e.js" crossorigin="anonymous"></script>
+    <script>
+        function displayDate() {
+            const today = new Date()
+            const day = String(today.getDate()).padStart(2, '0')
+            const month = String(today.getMonth() + 1).padStart(2, '0')
+            const year = today.getFullYear()
+
+            const dateString = `${day}.${month}.${year}`
+            document.getElementById("dateParagraph").innerHTML = "сьогодні: " + dateString
+        }
+    </script>
+</head>
+<body onload="displayDate()">
+    <div class="gradient">
+        <div class="layoutImage"></div>
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Логотип" class="logo">
+                <div class="company-name">Тотал Втор</div>
+            </div>
+            <div class="contacts">
+                <a href="tel:+380932158161">+380 (93) 215 81 61</a>
+                <a href="mailto:manager@totalvtor.od.ua">manager@totalvtor.od.ua</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/" class="mainPage">Головна</a></li>
+                <li><a href="/services">Послуги</a></li>
+                <li><a href="/aboutus">Про нас</a></li>
+                <li><a href="/contacts">Контакти та адреси</a></li>
+                <li><a href="/price">Ціни</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <section class="content">
+            <h1>Купуємо лом чорного та кольорового металу у приватних осіб і підприємств в Одесі та Одеській області. А також вторсировину:</h1>
+            <ul style="color: red;">
+                <li>Макулатуру</li>
+                <li>ПЕТ пляшку</li>
+                <li>Плівку (поліетилен)</li>
+                <li>Склотару</li>
+            </ul>
+            <p>
+                Наша компанія займається закупівлею чорного, кольорового металобрухту та вторсировини у приватних та юридичних осіб. Ми пропонуємо вигідні умови та оперативне обслуговування, гарантуючи справедливу і прозору оцінку вартості вашого металу чи вторсировини.
+            </p>
+            <p>
+                Ми надаємо професійні послуги з вивозу та купівлі металу або вторсировини. Наші спеціалісти оперативно виїжджають на вказане місце — чи це квартира, будинок або інша локація. На місці ми проводимо зважування, оцінюємо вартість і здійснюємо розрахунок з клієнтом. Також беремо на себе всю логістику, включаючи завантаження та транспортування.
+            </p>
+            <h2>Юридичним особам</h2>
+            <p>Для підприємств виконуємо демонтаж будь-яких металоконструкцій, різного обладнання та порізку ємностей.
+
+            Також закуповуємо металеві відходи від різного виробництва:</p>
+            <ul>
+                <li>Металеву стружку</li>
+                <li>Висічку листового металу</li>
+                <li>Металеві пакувальні стрічки</li>
+                <li>Відходи м’якої в’язальної проволоки</li>
+                <li>Відпрацьовані троси</li>
+            </ul>
+            <p>Оперативно здійснюємо оформлення купівлі-продажу металобрухту або вторсировини юридичним особам.
+
+Доставка чорного лому (кольорових металів) здійснюється нашим автотранспортом на спеціалізовану площадку, де металобрухт зважується на повірених вагах і вивантажується спецтехнікою (фукси, магніти).</p>
+            <div class="table-container">
+                <h2 style="color: red;">Ціни на лом та вторсировину в Одесі</h2>
+                <p style="color: red;">Оптові ціни уточнюйте за телефоном</p>
+                <p>Актуальність цін на <span id="dateParagraph"></span></p>
+                <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Тип лому</th>
+                            <th>Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(item => { %>
+                            <tr>
+                                <td><%= item.name %></td>
+                                <td><%= item.price %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <h2 class="title">Чому ви повинні здати лом/вторсировину або замовити контейнер у нас</h2>
+                <div class="icons-grid">
+                    <div class="icon-item">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>Заслужили довіру клієнтів</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <p>Розрахунок і зважування на місці</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Власний автопарк</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-brands fa-codepen"></i>
+                        <p>Контейнери різних розмірів</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p>Відмінна ціна</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <p>Своєчасний розрахунок</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer style="background-color: #484848; padding: 20px; display: flex; align-items: center; justify-content: space-between; font-family: Arial, sans-serif;">
+        
+        <div style="display: flex; align-items: center;" class="footer-logo-container">
+          <img src="img/logo.png" alt="Логотип" style="height: 50px; margin-right: 10px;">
+          <span style="font-family: 'Russo One', serif; white-space: nowrap;">Тотал Втор</span>
+        </div>
+      
+        
+        <!-- <div style="text-align: center;">
+          <a href="tel:+380932158161" style="margin: 0; font-weight: bold; color: lightgray; text-decoration: none;">+380 (93) 215 81 61</a>
+        </div> -->
+      
+        
+        <div class="footer-icons">
+          <a href="https://www.tiktok.com/@metallolom_od?_t=ZM-8sqTkTGbXoj&_r=1" class="fab fa-tiktok" aria-label="Tiktok"></a>
+          <a href="https://t.me/+-V1Dq0yUMps1ZDgy" class="fa fa-telegram" aria-label="Telegram"></a>
+          <a href="mailto:manager@totalvtor.od.ua" class="fa fa-envelope" aria-label="Email"></a>
+          <a href="tel:+380932158161" class="fas fa-square-phone" aria-label="Телефон"></a>
+        </div>
+    </footer>
+</body>
+</html>

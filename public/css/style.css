@@ -1,0 +1,141 @@
+section.content {
+    max-width: 100%; 
+    margin: auto; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+header {
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icon-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+}
+
+.icon-item:hover {
+    border: 1px solid #f05a28;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-item i {
+    font-size: 40px;
+    color: #f05a28;
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px; 
+	overflow: hidden; 
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table th {
+    background-color: #f05a28;
+    color: white;
+    text-align: left;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #e0e0e0;
+}
+
+select:focus {
+    border-color: #f05a28;
+    box-shadow: 0 0 8px #f05a28;
+}
+
+select option {
+    padding: 10px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}

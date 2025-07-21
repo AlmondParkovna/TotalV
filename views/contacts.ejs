@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <title>Тотал Втор | Контакти та адреси приймальних пунктів металобрухту та вторсировини в Одесі</title>
+    <meta name="description" content="Контактна інформація та адреси приймальних пунктів металобрухту та вторсировини у Одесі">
+    <script src="https://kit.fontawesome.com/f27517934e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="gradient">
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Логотип" class="logo">
+                <div class="company-name">Тотал Втор</div>
+            </div>
+            <div class="contacts">
+                <a href="tel:+380932158161">+380 (93) 215 81 61</a>
+                <a href="mailto:manager@totalvtor.od.ua">manager@totalvtor.od.ua</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Головна</a></li>
+                <li><a href="/services">Послуги</a></li>
+                <li><a href="/aboutus">Про нас</a></li>
+                <li><a href="/contacts" class="mainPage">Контакти та адреси</a></li>
+                <li><a href="/price">Ціни</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <section class="content">
+            <h1 style="text-align: center;"><a href="tel:+380932158161" style="color: black;">+380 (93) 215 81 61</a></h1>
+            <h1 style="text-align: center;"><a href="mailto:manager@totalvtor.od.ua" style="color: black;">manager@totalvtor.od.ua</a></h1>
+            <div class="container">
+                <div class="title">Оберіть район і адресу</div>
+                <div class="filter">
+                    <select id="districtFilter" onchange="filterLocations()">
+                        <option value="all">Усі райони</option>
+                        <option value="malinovskiy">Малиновський</option>
+                        <option value="kievskiy">Київський</option>
+                        <option value="suvorovskiy">Суворовський</option>
+                        <option value="primorskiy">Приморський</option>
+                        <option value="oblast">Одеська область</option>
+                    </select>
+                </div>
+                <div class="locations" id="locations">
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Маршала Малиновського 112</div>
+                        <div class="location-address">Маршала Малиновського 112</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/k4UWNuCBB7jNsSxPA?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Олександрівський пр-т 33</div>
+                        <div class="location-address">Олександрівський пр-т 33</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/yYnGVDRiwDXHnNWV8?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Олександрівський пр-т 36</div>
+                        <div class="location-address">Олександрівський пр-т 36</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/L8wSbRLW59aL7LPx6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Сегедська 8б</div>
+                        <div class="location-address">Сегедська 8б</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/PJ8xJZZi87Z67N5ZA?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Суднобудівна 15</div>
+                        <div class="location-address">Суднобудівна 15</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/xVwmMJs2sxZjn8ce7?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Докова 19</div>
+                        <div class="location-address">Докова 19</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/WQ34VgmjVqhLjfSV7?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="kievskiy">
+                        <div class="location-title">Пр-т Небесної сотні 36</div>
+                        <div class="location-address">Пр-т Небесної сотні 36</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/f2XHa3HJT7K6N5pPA?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Кордoннa 27а</div>
+                        <div class="location-address">Кордoннa 27а</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/KArqEYzmxHB6wxLo7?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Житомирська 6</div>
+                        <div class="location-address">Житомирська 6</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/ukqRCHjhfVMaYkPy5?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Стовпова 26</div>
+                        <div class="location-address">Стовпова 26</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/mgCXxd4z46R3PgN86?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Задніпровського 4а</div>
+                        <div class="location-address">Дальницьке шосе 1</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/dg59hPU6wmNLbw5j6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Промислова 30</div>
+                        <div class="location-address">Промислова 30</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/u6XGodDeM91w6nXy8?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Рачкова 1</div>
+                        <div class="location-address">Рачкова 1</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/29bHYdEwXjUhwkMd6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="suvorovskiy">
+                        <div class="location-title">Марсельська 2б</div>
+                        <div class="location-address">Марсельська 2б</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/fAX1JbVjyAnhfZfP8?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="suvorovskiy">
+                        <div class="location-title">Паустовського 15</div>
+                        <div class="location-address">Паустовського 15</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/UkhVYxppHj1XAAbaA?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="malinovskiy">
+                        <div class="location-title">Генерала Петрова 65</div>
+                        <div class="location-address">Генерала Петрова 65</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/qCowoX44asM5qrUN9?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Володимира Винниченка 10</div>
+                        <div class="location-address">П’ятницького 10</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/ob1YTTXaqbumYoir6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="primorskiy">
+                        <div class="location-title">Садиківська 24</div>
+                        <div class="location-address">Садиківська 24</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/cpvnZzAjbNyjy9FdA?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="oblast">
+                        <div class="location-title">Нерубайське</div>
+                        <div class="location-address">НАТІ, поруч із магазином пива</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/s44FXq5SHqkpNjXy8?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="kievskiy">
+                        <div class="location-title">14 Ст. Люстдорфської дороги</div>
+                        <div class="location-address">14 Ст. Люстдорфської дороги</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/MCQwfwnpCVBzwDMj8?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="suvorovskiy">
+                        <div class="location-title">Яма, Об’їзна дорога</div>
+                        <div class="location-address">Яма</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/51sxTo8WFE4LFHyi7?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="oblast">
+                        <div class="location-title">Усатого, 1-ша Водоп’янова</div>
+                        <div class="location-address">Усатого, 1-ша Водоп’янова</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/ztnW68M4kYuQb8Vi6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="oblast">
+                        <div class="location-title">Іличанка, 21 км Старокиївської дороги</div>
+                        <div class="location-address">Північтранс</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/H2m8CuhKNoMFiu4N6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="oblast">
+                        <div class="location-title">Проценко 2</div>
+                        <div class="location-address">Крижанівка</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/HTzPMJ76Bh5q8mkAA?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="oblast">
+                        <div class="location-title">Сухий Лиман, Миколаївська 1/1</div>
+                        <div class="location-address">Сухий Лиман, Миколаївська 1/1</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/yR5o87v7FfPEbyLB9?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                    <div class="location" data-district="oblast">
+                        <div class="location-title">Червоний хутір, Горіхова алея</div>
+                        <div class="location-address">Червоний хутір, Горіхова алея</div>
+                        <div class="location-link"><a href="https://maps.app.goo.gl/nuL4onSD9rob4mpx6?g_st=it" target="_blank">Відкрити в Google Maps</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function filterLocations() {
+            const filterValue = document.getElementById('districtFilter').value;
+            const locations = document.querySelectorAll('.location');
+
+            locations.forEach(location => {
+                if (filterValue === 'all' || location.getAttribute('data-district') === filterValue) {
+                    location.style.display = '';
+                } else {
+                    location.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <footer style="background-color: #484848; padding: 20px; display: flex; align-items: center; justify-content: space-between; font-family: Arial, sans-serif;">
+            
+        <div style="display: flex; align-items: center;" class="footer-logo-container">
+        <img src="img/logo.png" alt="Логотип" style="height: 50px; margin-right: 10px;">
+        <span style="font-family: 'Russo One', serif; white-space: nowrap;">Тотал Втор</span>
+        </div>
+    
+        
+        <div style="text-align: center;">
+        <a href="tel:+380932158161" style="margin: 0; font-weight: bold; color: lightgray; text-decoration: none;">+380 (93) 215 81 61</a>
+        </div>
+    
+        
+        <div class="footer-icons">
+            <a href="https://www.tiktok.com/@metallolom_od?_t=ZM-8sqTkTGbXoj&_r=1" class="fab fa-tiktok" aria-label="Tiktok"></a>
+            <a href="https://t.me/+-V1Dq0yUMps1ZDgy" class="fa fa-telegram" aria-label="Telegram"></a>
+            <a href="mailto:manager@totalvtor.od.ua" class="fa fa-envelope" aria-label="Email"></a>
+            <a href="tel:+380932158161" class="fas fa-square-phone" aria-label="Телефон"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
