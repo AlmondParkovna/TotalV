@@ -60,13 +60,14 @@ app.get('/adresses/:page', (req, res) => {
   const page = req.params.page;
   const filePath = path.join(__dirname, 'views', 'adresses', `${page}.ejs`);
 
-  const files = fs.readdirSync(`./public/img/adresses/${page}`)
+  
 
   // Проверяем, существует ли файл шаблона
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
       return res.status(404).render('404')
     }
+    const files = fs.readdirSync(`./public/img/adresses/${page}`)
     res.render(`adresses/${page}`, { workingDay: '08:00-19:00', dayOff: '08:00-17:00', page: page, files: files });
   });
 })
