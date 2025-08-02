@@ -52,6 +52,10 @@ app.get('/telegram', (req, res) => {
   res.render('telegram')
 })
 
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'))
+})
+
 
 // Адреси 
 
